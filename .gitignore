@@ -1,0 +1,34 @@
+# ignore .a file
+
+# 忽略 .a 文件
+*.a
+.ipynb_checkpoints
+*.pyc
+*__pycache__
+*.cpython-35.pyc
+*__pycache__/
+*.py[cod]
+*.npy
+*.pkl
+# 但否定忽略 lib.a, 尽管已经在前面忽略了 .a 文件
+!lib.a
+
+
+
+# 仅在当前目录下忽略 TODO 文件， 但不包括子目录下的 subdir/TODO
+/TODO
+
+
+# 忽略 build/ 文件夹下的所有文件
+build/
+experiments/data/.ipynb_checkpoints/
+*/__pycache__/models.cpython-35.pyc
+experiments/AE/__pycache__/models.cpython-35.pyc
+experiments/VAE/__pycache__/models.cpython-35.pyc
+
+# 忽略 doc/notes.txt, 不包括 doc/server/arch.txt
+doc/*.txt
+
+# 忽略所有的 .pdf 文件 在 doc/ directory 下的
+doc/**/*.pdf
+experiments/**/__pycache__/models.cpython-35.pyc
